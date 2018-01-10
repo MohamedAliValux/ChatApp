@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smartc.mohamed.chatapp.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ip"
+            android:textColor="@color/blue"/>
+        <TextView
+            android:id="@+id/txt_port"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/port"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+        <EditText
+            android:id="@+id/ed_port"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:hint="@string/port"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/ed_ip"
+                android:layout_marginLeft="8dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:hint="@string/ip"
+                android:backgroundTint="@color/white" />
+            <Button
+                android:id="@+id/btn_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="8dp"
+                android:text="@string/connect"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
